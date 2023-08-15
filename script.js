@@ -3,7 +3,6 @@ const addTaskButton = document.getElementById("addTaskButton");
 const taskList = document.getElementById("taskList");
 
 let taskArray = getTaskFromLocalStorage()
-
 function getTaskFromLocalStorage() {
     return JSON.parse(localStorage.getItem("tasks")) || [];
 }
