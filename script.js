@@ -2,10 +2,15 @@ const taskInput = document.getElementById ("taskInput");
 const addTaskButton = document.getElementById("addTaskButton");
 const taskList = document.getElementById("taskList");
 
+let taskArray = getTaskFromLocalStorage()
 
+function getTaskFromLocalStorage() {
+    return JSON.parse(localStorage.getItem("tasks")) || [];
+}
 
 // 3.5 Implement the createTaskElement(taskObj) Function
 function createTaskElement(taskObj) {
+    let taskArray 
     const taskItem = document.createElement("li");
     taskItem.classList.add("taskItem");
   
