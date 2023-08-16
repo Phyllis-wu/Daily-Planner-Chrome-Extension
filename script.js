@@ -1,4 +1,4 @@
-const taskInput = document.getElementById ("taskInput");
+const taskInput = document.getElementById("taskInput");
 const addTaskButton = document.getElementById("addTaskButton");
 const taskList = document.getElementById("taskList");
 
@@ -7,14 +7,17 @@ function getTaskFromLocalStorage() {
     return JSON.parse(localStorage.getItem("tasks")) || [];
 }
 
-function updateTasksInLocalStorage()
+function updateTasksInLocalStorage(){
 localStorage.setItem(JSON.stringify("tasks"));
+}
 
-function createTask(taskText)()
+function createTask(taskText)(){
     return{text: taskText, completed: false};
+}
 
+function deleteTask(index)(){
 
-
+updateTasksInLocalStorage()
 
 
 // 3.5 Implement the createTaskElement(taskObj) Function
