@@ -10,6 +10,13 @@ function getTaskFromLocalStorage() {
 function updateTasksInLocalStorage()
 localStorage.setItem(JSON.stringify("tasks"));
 
+function createTask(taskText)()
+    return{text: taskText, completed: false};
+
+
+
+
+
 // 3.5 Implement the createTaskElement(taskObj) Function
 function createTaskElement(taskObj) {
    
