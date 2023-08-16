@@ -9,7 +9,7 @@ function getTaskFromLocalStorage() {
 
 // 3.5 Implement the createTaskElement(taskObj) Function
 function createTaskElement(taskObj) {
-    let taskArray 
+   
     const taskItem = document.createElement("li");
     taskItem.classList.add("taskItem");
   
